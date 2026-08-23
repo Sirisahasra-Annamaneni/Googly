@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --pitch-dark: #0f2a1c;
+  --pitch: #1d4a31;
+  --pitch-light: #2e6b45;
+  --cream: #f1e9d2;
+  --cream-dim: #dcd2b2;
+  --ball-red: #a1291f;
+  --ball-red-bright: #c7402f;
+  --willow: #c9a66b;
+  --ink: #16241c;
+  --good: #3e8e52;
+  --good-bg: #1f4a2c;
+  --bad: #7a2b24;
+  --bad-bg: #3a1712;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(201, 166, 107, 0.18), transparent 26%),
+    radial-gradient(circle at 88% 74%, rgba(199, 64, 47, 0.12), transparent 28%),
+    repeating-linear-gradient(
+      90deg,
+      var(--pitch-light) 0px,
+      var(--pitch-light) 2px,
+      transparent 2px,
+      transparent 64px
+    ),
+    linear-gradient(135deg, var(--pitch-dark) 0%, #20573b 52%, var(--pitch-dark) 100%);
+  background-attachment: fixed;
+  color: var(--cream);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Colored keywords */
+
+.inline-good {
+  color: #5bd67b;
+  font-weight: 700;
+}
+
+.inline-bad {
+  color: #ef5350;
+  font-weight: 700;
+}
+
+/* Improve rule titles */
+
+.rule-tile h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f3e5c0;
+  letter-spacing: 0.02em;
+}
+
+/* Improve readability */
+
+.rule-tile p {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(243, 229, 192, 0.85);
+  font-size: 0.95rem;
+}
+
+/* Number styling */
+
+.rule-number {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #cda15b;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.8rem;
+}
+
+/* Hover effect */
+
+.rule-tile {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rule-tile:hover {
+  transform: translateY(-3px);
+}
+
+/* Footnote */
+
+.rules-footnote {
+  margin-top: 2rem;
+  text-align: center;
+  color: rgba(243, 229, 192, 0.8);
+  line-height: 1.7;
+}
+
+.rules-footnote b {
+  color: #f3e5c0;
+}
