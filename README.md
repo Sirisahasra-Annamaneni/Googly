@@ -2,6 +2,10 @@
 
 Googly is a cricket guessing game built with React. Each round hides an international cricketer, and the player searches for cricketers and uses the revealed tiles to identify the mystery player.
 
+## Play Live
+
+🎮 Play this at: [googly9.netlify.app](https://googly9.netlify.app)
+
 ## Clone the Repository
 
 ```bash
